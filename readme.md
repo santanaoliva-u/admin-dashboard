@@ -1,0 +1,1 @@
+This admin dashboard project was fun to create with combined usage of flex and grid, aligning content and layouts is much more easier. This project purpose is to use my new learned css skills and I had fun doing that.

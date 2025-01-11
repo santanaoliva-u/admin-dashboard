@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('fonts/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+#main-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+.header{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 1.9rem;
+}
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #000;
+    color: #eff6ff;
+    font-size: 1.9rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sidebar li{
+    list-style: none;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #eff6ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2.0rem;
+}
+.sidebar div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h1{
+    font-size: 3.5rem;
+}
+ul{
+    padding: 10px;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: repeat(2 1fr);
+    background-color: #000000;
+    color: #eff6ff;
+    padding: 0 50px;
+}
+.header-row-one, .header-row-two{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.header-elements, .header-row-one form{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+}
+.greet-name{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+input{
+    width: 30vw;
+    border-radius: 10px;
+}
+input:focus{
+    box-shadow: 3px 3px;
+}
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 33.3%;
+    font-weight: 900;
+    box-shadow: 2px 2px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    background-color: #3b333a;
+    color: #eff6ff;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.cards-container{
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.main-side-content{
+    grid-column: 2 / 3;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.announce, .trend{
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.announce > div:first-child, .announce div:nth-child(2){
+    border-bottom: 1px solid #eff6ff;
+    padding-bottom: 10px;
+}
+.trend > div{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.trend > div > img + div{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.trend span:first-child{
+    font-weight: 900;
+}
+.profile-image:hover{
+    cursor: pointer;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    padding: 30px;
+    background-color: #000000;
+    border-left: 5px solid #eff6ff;
+    border-radius: 15px;
+    gap: 20px;
+}
+.interactable-icons{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+.interactable-icons a{
+    text-decoration: none;
+    color:#eff6ff;
+}
+.icons{
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(114deg) brightness(104%) contrast(101%);
+}
+.icons:hover{
+    cursor: pointer;
+}
+.profile-image{
+    border: 1px solid #eff6ff;
+    border-radius: 100px;
+}
+
